@@ -1,0 +1,198 @@
+h1 {
+  color: white; }
+
+p {
+  color: white; }
+
+.navbar {
+  padding-top: 0px;
+  padding-bottom: 0px; }
+
+.subtitulos, .servicios__tipos__laboratorio__titulo, .servicios__tipos__diagnosticoImagenes__titulo, .servicios__tipos__diagnosticoMedicos__titulo {
+  font-family: Noto Serif TC;
+  font-weight: bold; }
+
+header {
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  border: 0px 0px 0px 0px;
+  display: flex;
+  flex-direction: column; }
+  header .header__top {
+    background-color: #787e89;
+    display: grid;
+    grid-template-areas: "redes telefono";
+    grid-template-columns: 1fr 1fr;
+    width: 100%; }
+    header .header__top__redes {
+      display: flex;
+      grid-area: redes; }
+      header .header__top__redes__imagen {
+        width: 5%;
+        height: auto;
+        margin: 3px 3px 3px 3px; }
+        header .header__top__redes__imagen img {
+          width: 100%;
+          height: auto; }
+    header .header__top__telefono {
+      color: white;
+      grid-area: telefono;
+      width: 100%;
+      text-align: right; }
+      header .header__top__telefono p {
+        margin-top: 3px;
+        margin-right: 3px; }
+    header .header__top #youtube {
+      margin-top: 1%; }
+  header nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    padding: 0px 0px 0px 0px;
+    font-family: 'Overpass', sans-serif; }
+  header #nav--padding {
+    padding-top: 0;
+    padding-bottom: 0; }
+  header .logo {
+    align-self: center;
+    width: 30%; }
+    header .logo__img {
+      width: 100%;
+      height: auto; }
+
+section {
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  border: 0px 0px 0px 0px; }
+
+footer {
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  border: 0px 0px 0px 0px;
+  background-image: linear-gradient(white, #2178a2);
+  width: 100%; }
+
+.contenedorFooter {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .contenedorFooter__imagen {
+    width: 25%;
+    height: 25%; }
+  .contenedorFooter__texto {
+    color: white; }
+
+#itemNav {
+  justify-content: space-around; }
+
+.imagen {
+  width: 100%;
+  height: AUTO;
+  margin: 0 50% 0 50%;
+  display: inline-block; }
+
+.sedes {
+  background-image: linear-gradient(#2178a2, white);
+  font-family: 'Noto Serif TC', serif; }
+  .sedes__titulo {
+    color: white;
+    text-align: center; }
+  .sedes__descripcion {
+    text-align: center; }
+  .sedes__contenedorSedes {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between; }
+    .sedes__contenedorSedes__aSede {
+      margin: 10px 10px; }
+      .sedes__contenedorSedes__aSede__sede {
+        width: 100%;
+        position: relative; }
+        .sedes__contenedorSedes__aSede__sede__top {
+          background: rgba(120, 126, 137, 0.5);
+          color: white;
+          font-size: 1em;
+          padding: 5px 0px;
+          position: absolute;
+          width: 100%;
+          height: 10%;
+          text-align: center; }
+        .sedes__contenedorSedes__aSede__sede__direccion {
+          color: gray !important; }
+
+.servicios {
+  background-image: linear-gradient(#2178a2, white);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  font-family: 'Noto Serif TC', serif; }
+  .servicios__titulo {
+    align-self: center; }
+  .servicios__tipos__laboratorio__titulo {
+    color: white;
+    text-align: center; }
+  .servicios__tipos__diagnosticoImagenes__titulo {
+    color: white;
+    text-align: center; }
+  .servicios__tipos__diagnosticoMedicos__titulo {
+    color: white;
+    text-align: center; }
+
+.equipos {
+  background-image: linear-gradient(#2178a2, white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Noto Serif TC', serif; }
+
+#video {
+  width: 100%;
+  height: auto; }
+
+.carousel-inner {
+  height: auto; }
+  .carousel-inner carousel-item {
+    height: 900px; }
+  .carousel-inner .carouselImg {
+    height: 900px; }
+
+@media only screen and (max-width: 420px) {
+  .header__top__redes__imagen {
+    width: 50% !important;
+    height: auto !important; }
+  .header__top__telefono {
+    text-align: center !important;
+    font-size: small !important; }
+  #itemNav {
+    font-size: smaller  !important;
+    flex-direction: column  !important; }
+  .sedes__contenedorSedes {
+    display: flex;
+    flex-direction: column;
+    width: 100%; }
+  .contenedorFooter__imagen {
+    width: 50% !important; }
+  .carousel-inner {
+    height: auto; }
+    .carousel-inner carousel-item {
+      height: 300px !important; }
+    .carousel-inner .carouselImg {
+      height: 300px !important; } }
+
+@media only screen and (max-width: 768px) {
+  .header__top__redes__imagen {
+    width: 10% !important; }
+  .equipos {
+    width: 100% !important; }
+  #carrouselEquipo {
+    width: 100%; } }
+
+.carousel-inner {
+  height: auto; }
+  .carousel-inner carousel-item {
+    height: 600px; }
+  .carousel-inner .carouselImg {
+    height: 600px; }
